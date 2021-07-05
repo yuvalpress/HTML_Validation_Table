@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <!-- Bootstrap CSS -->
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet"/>
+  <style>
+   .title {
+        text-align: center;
+        padding: 20px;
+        background-color: #e9ecef;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .mainDiv{
+        margin: 15px;
+        background-color: #e9ecef;
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .td1 {
+        text-align: start;
+    }
+  </style>
+  <title>
+   Validation
+  </title>
+ </head>
+ <body>
+  <h1 class="title">
+   Testing Project Validation
+  </h1>
+  <div class="mainDiv">
+   <h1>
+    ESXi Servers
+   </h1>
+   <table class="table mainTable">
+    <thead class="thead-dark">
+     <tr>
+      <th scope="col">
+       Server Name
+      </th>
+      <th scope="col">
+       IP Address
+      </th>
+      <th scope="col">
+       Operating System
+      </th>
+      <th scope="col">
+       License
+      </th>
+      <th scope="col">
+       Datastore
+      </th>
+      <th scope="col">
+       VMs
+      </th>
+      <th scope="col">
+       Virtual Switches
+      </th>
+      <th scope="col">
+       NTP
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td class="bg-danger">
+       ESX02
+      </td>
+      <td class="bg-danger">
+       Subnet:255.0.0.0 Gateway:172.29.29.252
+      </td>
+      <td class="bg-success">
+       Vsphere 6.5.0
+      </td>
+      <td class="bg-success">
+       License Applied
+      </td>
+      <td class="bg-success">
+       <div class="btn-group flex-wrap">
+        <button class="m-0 btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+         Datastores - 1
+         <span class="caret">
+         </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+         <div class="dropdown-item text-1">
+          <table class="table">
+           <thead class="thead-dark">
+            <tr>
+             <th scope="col">
+              Name
+             </th>
+             <th scope="col">
+              Size
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              datastore1 (1)
+             </td>
+             <td>
+              2T
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </td>
+      <td class="bg-danger">
+       <div class="btn-group flex-wrap">
+        <button class="m-0 btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+         Virtual Machines - 10
+         <span class="caret">
+         </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+         <div class="dropdown-item text-1">
+          <table class="table">
+           <thead class="thead-dark">
+            <tr>
+             <th scope="col">
+              VM Name
+             </th>
+             <th scope="col">
+              OS
+             </th>
+             <th scope="col">
+              Memory
+             </th>
+             <th scope="col">
+              Cores
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Verint_SI_Workstation
+             </td>
+             <td>
+              Microsoft Windows 10 (64-bit)
+             </td>
+             <td>
+              8GB
+             </td>
+             <td>
+              4Cores
+             </td>
+            </tr>
+            <tr>
+             <td>
+              router
+             </td>
+             <td>
+             </td>
+             <td>
+              0.25GB
+             </td>
+             <td>
+              1Cores
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Amit_PC
+             </td>
+             <td>
+              Microsoft Windows 10 (64-bit)
+             </td>
+             <td>
+              64GB
+             </td>
+             <td>
+              8Cores
+             </td>
+            </tr>
+            <tr>
+             <td>
+              OEM_DC
+             </td>
+             <td>
+              Microsoft Windows Server 2016 or later (64-bit)
+             </td>
+             <td>
+              16GB
+             </td>
+             <td>
+              4Cores
+             </td>
+            </tr>
+            <tr>
+             <td>
+              UTX_Workstatio
+             </td>
+             <td>
+             </td>
+             <td>
+              8GB
+             </td>
+             <td>
+              4Cores
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </td>
+      <td class="bg-danger">
+       <div class="btn-group flex-wrap">
+        <button class="m-0 btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+         Virtual Switches - 2
+         <span class="caret">
+         </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+         <div class="dropdown-item text-1">
+          <table class="table">
+           <thead class="thead-dark">
+            <tr>
+             <th scope="col">
+              VSwitch Name
+             </th>
+             <th scope="col">
+              PortGroups
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              vSwitch0
+             </td>
+             <td>
+              VLAN31, VLAN30, VLAN29, vMotion, Management Network
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </td>
+      <td class="bg-success">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <table class="table mainTable">
+    <thead class="thead-dark">
+     <tr>
+      <th scope="col">
+       iDrac Name
+      </th>
+      <th scope="col">
+       Service Tag
+      </th>
+      <th scope="col">
+       IP Address
+      </th>
+      <th scope="col">
+       LOM\Dedicated
+      </th>
+      <th scope="col">
+       Console Type
+      </th>
+      <th scope="col">
+       Raid Type
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tr>
+     <td class="bg-danger">
+      No Ping
+     </td>
+     <td class="bg-warning">
+      No Data Fetched
+     </td>
+    </tr>
+   </table>
+  </div>
+  <div class="mainDiv">
+   <h1>
+    Linux Servers
+   </h1>
+   <table class="table mainTable">
+    <thead class="thead-dark">
+     <tr>
+      <th scope="col">
+       Server Name
+      </th>
+      <th scope="col">
+       IP Address
+      </th>
+      <th scope="col">
+       Domain
+      </th>
+      <th scope="col">
+       Operating System
+      </th>
+      <th scope="col">
+       Repolist
+      </th>
+      <th scope="col">
+       Teaming
+      </th>
+      <th scope="col">
+       Timezone
+      </th>
+      <th scope="col">
+       NTP
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tr>
+     <td class="bg-success">
+      Ansible
+     </td>
+     <td class="bg-success">
+      IP OK
+     </td>
+     <td class="bg-danger">
+      theseus.com
+     </td>
+     <td class="bg-success">
+      8.2
+     </td>
+     <td class="bg-success">
+      <div class="btn-group flex-wrap">
+       <button class="m-0 btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+        Repositories - 3
+        <span class="caret">
+        </span>
+       </button>
+       <div class="dropdown-menu dropdown-menu-right" role="menu">
+        <div class="dropdown-item text-1">
+         <table class="table">
+          <thead class="thead-dark">
+           <tr>
+            <th scope="col">
+             Repository
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="td1">
+             1. ansible-2.8-for-rhel-8-x86_64-rpms Red Hat Ansible Engine 2.8 for RHEL 8 x86_64 (RPMs)
+            </td>
+           </tr>
+           <tr>
+            <td class="td1">
+             2. rhel-8-for-x86_64-appstream-rpms   Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+            </td>
+           </tr>
+           <tr>
+            <td class="td1">
+             3. rhel-8-for-x86_64-baseos-rpms      Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </td>
+     <td class="bg-danger">
+      Teaming Not Applied
+     </td>
+     <td class="bg-success">
+      UTC
+     </td>
+     <td class="bg-danger">
+      NTPServer.theseus.com
+     </td>
+    </tr>
+   </table>
+   <table class="table mainTable">
+    <thead class="thead-dark">
+     <tr>
+      <th scope="col">
+       iDrac Name
+      </th>
+      <th scope="col">
+       Service Tag
+      </th>
+      <th scope="col">
+       IP Address
+      </th>
+      <th scope="col">
+       LOM\Dedicated
+      </th>
+      <th scope="col">
+       Console Type
+      </th>
+      <th scope="col">
+       Raid Type
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tr>
+     <td class="bg-danger">
+      No Ping
+     </td>
+     <td class="bg-warning">
+      No Data Fetched
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,39 @@
+2020-11-23 14:30:46,554 - INFO - Called ESXi method
+2020-11-23 14:30:46,616 - INFO - Initialized start of an ESXi table
+2020-11-23 14:30:46,674 - INFO - Fetched ESXi servers data
+2020-11-23 14:30:46,701 - INFO - ESXi validation will be performed on servers: '172.29.29.52'
+2020-11-23 14:30:57,875 - INFO - Started writing tr tag for ESX Server 172.29.29.52
+2020-11-23 14:30:57,876 - INFO - Hostname was added to tr tag
+2020-11-23 14:30:57,876 - INFO - Operating System was added to tr tag
+2020-11-23 14:30:57,876 - INFO - License was added to tr tag
+2020-11-23 14:30:57,876 - INFO - --------------------------------------------------------------------------------------------------------------------------
+2020-11-23 14:30:57,876 - INFO - Started Datastores Validations
+2020-11-23 14:30:57,930 - INFO - Fetched all data from Datastores sheet
+2020-11-23 14:31:02,053 - INFO - Fetched all data from Datastores script
+2020-11-23 14:31:02,053 - INFO - Datastore datastore1 (1) exists
+2020-11-23 14:31:02,053 - INFO - All datastores are exist with the right names
+2020-11-23 14:31:02,054 - INFO - Finished datastores tag creation
+2020-11-23 14:31:02,054 - INFO - --------------------------------------------------------------------------------------------------------------------------
+2020-11-23 14:31:02,054 - INFO - Started Virtual Machines Validations
+2020-11-23 14:31:06,568 - INFO - Fetched all data from Virtual Machines script
+2020-11-23 14:31:06,568 - ERROR - Not all Virtual Machines exists
+2020-11-23 14:31:06,568 - INFO - Finished Virtual Machines tag creation
+2020-11-23 14:31:06,568 - INFO - --------------------------------------------------------------------------------------------------------------------------
+2020-11-23 14:31:06,568 - INFO - Started Virtual Switches Validations
+2020-11-23 14:31:10,638 - INFO - Not all Virtual Switches exists
+2020-11-23 14:31:10,639 - INFO - Finished Virtual Switches tag creation
+2020-11-23 14:31:10,639 - INFO - NTP was added to tr tag
+2020-11-23 14:31:10,664 - INFO - Finished writing tr tag for ESX 172.29.29.52
+2020-11-23 14:31:10,720 - INFO - Finished writing tr tag for the iDrac table of ESX servers 172.29.29.52
+2020-11-23 14:31:10,735 - INFO - Called Linux method
+2020-11-23 14:31:10,819 - INFO - Initialized start of an Linux table
+2020-11-23 14:31:10,869 - INFO - Fetched Linux servers data
+2020-11-23 14:31:10,894 - INFO - Linux validation will be performed on servers: <generator object linux.<locals>.<genexpr> at 0x00000258CA78F970>
+2020-11-23 14:31:11,536 - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2020-11-23 14:31:11,670 - INFO - Authentication (password) successful!
+2020-11-23 14:31:15,936 - INFO - Started writing tr tag for Linux Server 172.29.30.50
+2020-11-23 14:31:15,936 - INFO - Hostname was added to tr tag
+2020-11-23 14:31:15,937 - INFO - Operating System was added to tr tag
+2020-11-23 14:31:15,937 - INFO - NTP was added to tr tag
+2020-11-23 14:31:15,961 - INFO - Finished writing tr tag for Linux server 172.29.30.50
+2020-11-23 14:31:16,056 - INFO - Finished writing tr tag for the iDrac table of ESX servers 172.29.30.50

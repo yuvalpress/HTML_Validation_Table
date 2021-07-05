@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+#mainDiv{
+    margin: 15px;
+    background-color: #e9ecef;
+    padding: 30px;
+    border-radius: 25px;
+}
