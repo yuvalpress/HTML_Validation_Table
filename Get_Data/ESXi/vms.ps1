@@ -1,6 +1,6 @@
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false 1>$null 2>$null #Set trust certificate for remote VSphere servers
 
-Connect-VIServer -Server $args[0] -User root -Password customer1!
+Connect-VIServer -Server $args[0] -User root -Password password
 
 $names = (Get-VM | Select-Object -Property Name,Guest,MemoryGB,NumCpu).Name
 $outputNames = ''
