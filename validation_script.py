@@ -574,7 +574,7 @@ def linux(ex, page):
             #create client for communication
             client = paramiko.client.SSHClient()
             client.set_missing_host_key_policy(paramiko.AutoAddPolicy)
-            client.connect(hostname=address, username="root", password="Customer1!")
+            client.connect(hostname=address, username="root", password="password")
 
             #Execute all commands from list on remote server and fetch outputs
             for command, i in zip(commands, range(0, len(commands), +1)):
