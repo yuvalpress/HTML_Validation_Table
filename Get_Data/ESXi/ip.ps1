@@ -5,7 +5,7 @@ $output = ''
 
 foreach($server in $args) {
     #Connect to VSphere server
-    Connect-VIServer -Server $server -Protocol https -User root -Password customer1! 1>$null 2>$null
+    Connect-VIServer -Server $server -Protocol https -User root -Password password 1>$null 2>$null
 
     $output = $output + (((Get-VMHost).ExtensionData.Config.Network.Vnic | Where-Object{$_.Device -eq "vmk0"}).Spec.IP | Select-Object IpAddress, SubnetMask)[0].IpAddress + ','
 
